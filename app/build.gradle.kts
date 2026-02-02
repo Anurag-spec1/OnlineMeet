@@ -53,5 +53,5 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 
-    implementation("org.webrtc:google-webrtc:1.0.+") //webrtc
+    implementation("io.github.webrtc-sdk:android:137.7151.05") //webrtc
 }
