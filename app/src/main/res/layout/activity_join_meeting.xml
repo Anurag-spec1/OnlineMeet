@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="32dp"
+    android:gravity="center"
+    android:background="#1e3a8a">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="JOIN MEETING"
+        android:textSize="32sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginBottom="48dp"/>
+
+    <EditText
+        android:id="@+id/etRoomId"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:hint="Enter Meeting ID"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:background="#1e40af"
+        android:textColor="@color/white"
+        android:inputType="textCapCharacters"
+        android:maxLength="10"
+        android:layout_marginBottom="32dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnJoinCall"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:text="🎥 JOIN CALL"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:cornerRadius="16dp"/>
+
+    <TextView
+        android:id="@+id/tvBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="← Back to Home"
+        android:textColor="#93c5fd"
+        android:layout_marginTop="24dp"
+        android:clickable="true"
+        android:focusable="true"/>
+
+</LinearLayout>

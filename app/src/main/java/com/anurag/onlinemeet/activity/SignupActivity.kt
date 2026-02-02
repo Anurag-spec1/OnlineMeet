@@ -69,7 +69,7 @@ class SignupActivity : AppCompatActivity() {
                     auth.currentUser?.updateProfile(profileUpdates)
 
                     Toast.makeText(this, "Signup successful!", Toast.LENGTH_SHORT).show()
-//                    startActivity(Intent(this, HomeActivity::class.java))
+                    startActivity(Intent(this, HomeActivity::class.java))
                     finish()
 
                 } else {
