@@ -48,8 +48,8 @@ class MainActivity : AppCompatActivity() {
             .addOnCompleteListener { task ->
                 if (task.isSuccessful) {
                     Toast.makeText(this, "Login successful!", Toast.LENGTH_SHORT).show()
-//                    startActivity(Intent(this, HomeActivity::class.java))
-//                    finish()
+                    startActivity(Intent(this, HomeActivity::class.java))
+                    finish()
                 } else {
                     Toast.makeText(
                         this,
@@ -62,7 +62,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun checkIfAlreadyLoggedIn() {
         if (auth.currentUser != null) {
-//            startActivity(Intent(this, HomeActivity::class.java))
+            startActivity(Intent(this, HomeActivity::class.java))
             finish()
         }
     }
